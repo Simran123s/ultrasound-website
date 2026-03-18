@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divine Imaging ATL, LLC</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* BODY */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fefefe;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(to right, #3fa7e8, #a9d3f5);
+  height: 80px;
+  box-sizing: border-box;
+}
+
+.header-left {
+  font-size: 32px; /* large like mockup */
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-left .cursive {
+  font-family: 'Brush Script MT', cursive;
+}
+
+.header-left .normal {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px; /* spacing between nav links */
+}
+
+.header-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px; /* larger nav links */
+}
+
+.header-right a.book {
+  background-color: #d9534f;
+  padding: 10px 18px;
+  border-radius: 5px;
+}
+
+.header-right a.book:hover {
+  background-color: #c9302c;
+}
+
+@media(max-width:768px){
+  header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .header-right {
+    margin-top: 10px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .header-right a {
+    font-size: 18px;
+  }
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 750px;
+  text-align: center;
+  color: white;
+  padding: 20px 30px;
+}
+
+.hero-text h2 {
+  font-family: Arial, sans-serif;
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.hero-text a {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d9534f;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.hero-text a:hover {
+  background-color: #c9302c;
+}
+
+/* RED LINE UNDER HERO */
+.hero-underline {
+  height: 5px;
+  width: 100%;
+  background-color: #d9534f;
+}
+
+/* SERVICES SECTION */
+.services {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f1f7ff;
+}
+
+.services-title {
+  font-family: 'Brush Script MT', cursive; /* cursive title */
+  font-size: 32px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* space between decorative sides */
+}
+
+.services-title .decor {
+  font-size: 28px; /* decorative design on left and right */
+  color: #d9534f;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  width: 320px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  text-align: center;
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #eee;
+  padding: 25px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-left">
+    <span class="cursive">Divine Imaging</span> <span class="normal">ATL, LLC</span>
+  </div>
+  <nav class="header-right">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://calendly.com" class="book" target="_blank">Book Now</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="hero.png" alt="Hero Banner">
+  <div class="hero-text">
+    <h2>Bringing Ultrasound to You</h2>
+    <p>Mobile 3D/4D & Diagnostic Ultrasounds in Atlanta</p>
+    <a href="https://calendly.com" target="_blank">Schedule an Appointment</a>
+  </div>
+</section>
+
+<!-- RED LINE UNDER HERO -->
+<div class="hero-underline"></div>
+
+<!-- SERVICES -->
+<section class="services">
+  <h3 class="services-title"><span class="decor">✦</span> Our Services <span class="decor">✦</span></h3>
+  
+  <div class="service-cards">
+    <div class="card">
+      <img src="service1.png" alt="3D/4D Ultrasound">
+      <h4>3D/4D Ultrasounds</h4>
+      <p>See your baby in amazing detail, all from the comfort of your home.</p>
+    </div>
+    <div class="card">
+      <img src="service2.png" alt="In-Home Visits">
+      <h4>In-Home Visits</h4>
+      <p>Convenient mobile ultrasound service in Atlanta area.</p>
+    </div>
+    <div class="card">
+      <img src="service3.png" alt="Diagnostic Imaging">
+      <h4>Diagnostic Imaging</h4>
+      <p>Professional medical imaging by certified sonographers.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT PART UNDERNEATH THE 3 SERVICE CARDS -->
+  <div class="contact-section">
+    <h3 class="services-title"><span class="decor">✦</span> Contact Us <span class="decor">✦</span></h3>
+    <p>Call: 404-519-2852</p>
+    <p>Email: divineimagesatl@gmail.com</p>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2026 Divine Imaging ATL, LLC. All rights reserved.
+</footer>
+
+</body>
+</html>
